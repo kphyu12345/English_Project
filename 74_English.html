@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thadingyut Festival 2025</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="shortcut icon" href="Icon_Thadingyut.jpg" type="image/x-icon">
+  <style>
+    body { color:#333; line-height:1.7; overflow-x: hidden;}
+    header {
+      background:#ffb703; color:#fff; padding:40px 20px;
+      background-image: url('lantern.png');
+      background-size: cover;
+      background-position: center;
+      text-align:center; position:relative; overflow:hidden;
+    }
+    header h1 {margin:0; font-size:2.5em;}
+    header p {margin-top:10px;}
+    section {padding:40px 20px; max-width:900px; margin:auto;}
+    h2 {color:#8d3daf; margin-top:20px;}
+    footer {background:#f4f4f4; text-align:center; padding:20px; margin-top:40px;}
+ 
+    .highlight {
+      background:#fff3cd;
+      padding:15px;
+      border-left:5px solid #ffb703;
+      margin:20px 0;
+      border-radius:4px;
+      animation: glow 2s infinite alternate;
+    }
+ 
+    /* Floating lanterns */
+    .lantern {
+      position:absolute;
+      width:40px;
+      height:60px;
+      background:radial-gradient(circle at center, #ffb703 40%, #fb8500 100%);
+      border-radius:20px 20px 10px 10px;
+      opacity:0.8;
+      animation: float 6s ease-in-out infinite;
+    }
+    .lantern::after {
+      content:'';
+      position:absolute;
+      bottom:-10px;
+      left:10px;
+      width:20px;
+      height:10px;
+      background:#6d4c41;
+      border-radius:5px;
+    }
+ 
+    /* Animations */
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0); }
+      50% { transform: translateY(-30px) rotate(2deg); }
+    }
+    @keyframes glow {
+      from { box-shadow: 0 0 5px #ffb703; }
+      to { box-shadow: 0 0 20px #ffb703; }
+    }
+
+    /* Music button */
+    #music-controls {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 data-aos="fade-down">Thadingyut Festival 2025</h1>
+    <p class="lead" data-aos="fade-up">The Festival of Lights in Myanmar</p>
+
+    <!-- Floating Lanterns -->
+    <div class="lantern" style="left:10%; animation-delay:0s;"></div>
+    <div class="lantern" style="left:50%; animation-delay:2s;"></div>
+    <div class="lantern" style="left:80%; animation-delay:4s;"></div>
+  </header>
+
+  <!-- Music Controls -->
+  <div id="music-controls">
+    <button id="playPauseBtn" class="btn btn-warning btn-sm">🔊 Play Music</button>
+  </div>
+
+  <!-- Hidden YouTube background music -->
+  <iframe id="bg-music" width="0" height="0" style="display:none;"
+    src="https://www.youtube.com/embed/qQzf-xzZO7M?autoplay=1&loop=1&playlist=qQzf-xzZO7M&enablejsapi=1"
+    frameborder="0" allow="autoplay"></iframe>
+
+  <section>
+    <h2 data-aos="fade-right">What is "Thadingyut"?</h2>
+    <p data-aos="fade-up">
+      The Thadingyut Festival, or <strong>Festival of Lights</strong>, is an important annual Buddhist celebration in Myanmar.
+      It marks the end of the three-month Buddhist Lent, a period when weddings and festivals are classically taboo.
+      The festival takes place on the full moon of the Thadingyut lunar month and celebrates the Buddha's return from heaven.
+    </p>
+
+    <!-- First uploaded image -->
+    <img src="Thadingyut1.png" alt="Thadingyut Festival at pagoda" class="img-fluid rounded shadow mb-4" data-aos="zoom-in" width="200px">
+
+    <div class="highlight" data-aos="zoom-in">
+      <p><strong>Thadingyut Full Moon Day 2025:</strong> Monday, 6th October 2025</p>
+    </div>
+    <p data-aos="fade-up">
+      It is a significant Myanmar public holiday that commemorates the end of Buddhist Lent and the Buddha's return from his mother's heavenly abode.
+      Homes and streets are decorated with lanterns and candles to welcome the Buddha and show gratitude to elders.
+    </p>
+  </section>
+
+  <section>
+    <h2 data-aos="fade-left">When?</h2>
+    <p data-aos="fade-up">
+      The Lighting Festival, known as Thadingyut, celebrates the conclusion of the Buddhist Lent and the Buddha's return from heaven.
+      In 2025, people in Myanmar will enjoy <strong>five days off</strong> for the festival, with celebrations happening nationwide.
+    </p>
+    <p data-aos="fade-up">
+      The celebration lasts for <strong>three days</strong>: the day before the full moon day, the full moon day itself, and the day after.
+    </p>
+
+    <!-- Second uploaded image -->
+    <img src="Thadingyut2.png" alt="Lanterns and Shwedagon Pagoda" class="img-fluid rounded shadow mb-4" data-aos="fade-up" width="300px">
+  </section>
+
+  <section>
+    <h2 data-aos="fade-right">What can we do?</h2>
+    <ul class="list-group" data-aos="fade-up">
+      <li class="list-group-item">💡 <strong>Visit Pagodas:</strong> Especially the Shwedagon Pagoda in Yangon.</li>
+      <li class="list-group-item">🕯️ <strong>Participate in Candle Lighting Ceremonies:</strong> Join the nationwide tradition of lighting candles and lanterns.</li>
+      <li class="list-group-item">🎁 <strong>Shop Souvenirs:</strong> Explore markets filled with local crafts and festival goods.</li>
+      <li class="list-group-item">🎶 <strong>Engage in Community Events:</strong> Join street fairs, cultural performances, and communal offerings.</li>
+      <li class="list-group-item">🌿 <strong>Explore Natural Beauty:</strong> Use the holiday to visit Myanmar’s scenic landscapes and towns.</li>
+    </ul>
+
+    <!-- Third uploaded image -->
+    <img src="Thadingyut3.png" alt="Festival lanterns with full moon" class="img-fluid rounded shadow mt-4" data-aos="fade-up" width="300px">
+  </section>
+
+  <footer>
+    <p>© 2025 Thadingyut Festival Guide | Full Moon Day: 6 October 2025</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: false // animations repeat on scroll
+    });
+
+    // Music Controls
+    const btn = document.getElementById('playPauseBtn');
+    const iframe = document.getElementById('bg-music');
+    let playing = true;
+
+    function postMessageToYouTube(action) {
+      iframe.contentWindow.postMessage(
+        JSON.stringify({ event: "command", func: action, args: [] }),
+        "*"
+      );
+    }
+
+    btn.addEventListener('click', () => {
+      if (playing) {
+        postMessageToYouTube("pauseVideo");
+        btn.textContent = "▶️ Play Music";
+      } else {
+        postMessageToYouTube("playVideo");
+        btn.textContent = "⏸️ Pause Music";
+      }
+      playing = !playing;
+    });
+  </script>
+</body>
+</html>
